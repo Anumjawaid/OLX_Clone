@@ -4,7 +4,8 @@ import olx from '../ui/olx.png'
 import './header.css'
 import Imgdiv from '../ui/homeim.JPG'
 import card1 from '../ui/card1.JPG'
-
+import Headim from '../ui/appim.JPG'
+import {Link } from "react-router-dom";
 
 class Header extends React.Component{
     constructor(){
@@ -61,10 +62,24 @@ class Homeimg extends React.Component{
         )
     }
 }
+class Footimg extends React.Component{
+    constructor(){
+        super()
+    }
+    render(){
+        return(
+            <div className="headersec flex">
+                <img src={Headim} width="100%"/>
+
+            </div>
+        )
+    }
+}
 class Cards extends React.Component{
     render(){
         return(
             <div>
+                <Link to="/item" > 
                 <div className="cardd">
                     <br/>
                     <div className="imghead">
@@ -76,6 +91,7 @@ class Cards extends React.Component{
 
 
                 </div>
+                </Link>
             </div>
         )
     }
@@ -96,7 +112,7 @@ class Contgrey extends React.Component{
 class Cont extends React.Component{
     render(){
         return(
-                <div className="container">
+                <div className="container cont">
                 <div className="row">
                         <h3>Fresh Recommendations</h3>
                         </div>
@@ -148,4 +164,57 @@ class Cont extends React.Component{
         )
     }
 }
-export  {Header,Homeimg,Cards,Contgrey,Cont};
+class Footer1 extends React.Component{
+    render(){
+        return(
+            <div className='footer1'>
+                <div className="c1">
+                    <h6>Popular Categories</h6>
+                    <ul>
+                        <li>cars</li>
+                        <li>Flats for rents</li>
+                        <li>Jobs</li>
+                        <li>mobile Phones</li>
+                    </ul>
+                </div>
+                <div className="c2">
+                <h6>Popular Categories</h6>
+                    <ul>
+                        <li>cars</li>
+                        <li>Flats for rents</li>
+                        <li>Jobs</li>
+                        <li>mobile Phones</li>
+                    </ul>
+                </div>
+                <div className="c3"> <h6>Popular Categories</h6>
+                    <ul>
+                        <li>cars</li>
+                        <li>Flats for rents</li>
+                        <li>Jobs</li>
+                        <li>mobile Phones</li>
+                    </ul></div>
+                <div className="c5"> <h6>Popular Categories</h6>
+                    <ul>
+                        <li>cars</li>
+                        <li>Flats for rents</li>
+                        <li>Jobs</li>
+                        <li>mobile Phones</li>
+                    </ul></div>
+
+
+            </div>
+
+        )
+    }
+}
+class Footer2 extends React.Component{
+    render(){
+        return(
+            <div className="footer2">
+                <div className="oc"><p>Other countries India-South Africa-Indonesia</p></div>
+                <div className="clas"><h6>Free Classifieds In Pakistan @ 2006-2007</h6></div>
+            </div>
+        )
+    }
+} 
+export  {Header,Homeimg,Cards,Contgrey,Cont,Footimg,Footer1,Footer2};

@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css'
-import olx from '../ui/olx.png'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 class Home extends React.Component{
 constructor(){
     super()
