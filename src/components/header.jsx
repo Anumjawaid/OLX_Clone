@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 import olx from '../ui/olx.png'
 import './header.css'
@@ -8,14 +7,12 @@ import Headim from '../ui/appim.JPG'
 import {Link } from "react-router-dom";
 
 class Header extends React.Component{
-    constructor(){
-        super()
-    }
+   
     render(){
         return(
             <div className='header fixed flex'>
                 <div className="logo">
-                    <img src={olx} width='70' height='30' />
+                    <img alt="" src={olx} width='70' height='30' />
                 </div>
                 {/* <div className="location">
                     <div className="icon-search"></div>
@@ -56,16 +53,14 @@ class Homeimg extends React.Component{
     render(){
         return(
             <div className="headersec flex">
-                <img src={Imgdiv} width="100%"/>
+                <img alt='' src={Imgdiv} width="100%"/>
 
             </div>
         )
     }
 }
 class Footimg extends React.Component{
-    constructor(){
-        super()
-    }
+   
     render(){
         return(
             <div className="headersec flex">
