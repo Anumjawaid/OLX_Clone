@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Home extends React.Component{
 
 render(){
@@ -42,4 +43,5 @@ render(){
 }
 }
 
-export default Home; 
+
+export default Home ;

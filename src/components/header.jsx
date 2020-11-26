@@ -14,16 +14,7 @@ class Header extends React.Component{
                 <div className="logo">
                     <img alt="" src={olx} width='70' height='30' />
                 </div>
-                {/* <div className="location">
-                    <div className="icon-search"></div>
-                    <input className='label' placeholder='Your Location'  />
-                    <button className='icon-chevron-down' />
-                </div>
-                <div className="search flex aic">
-                    <input type="text" placeholder="Find Cars Mobile and many more..." className='query' />
-                    <button className='icon-search' />
-                </div>
-                <div className="actions"></div> */}
+                
                 <div className="locsearch">
                     {/* <span><i class="fas fa-search"></i></span> */}
                     <select name="Choose Location" id="">
@@ -39,7 +30,7 @@ class Header extends React.Component{
                     </select>
                 </div>
                 <div className="alink">
-                    <a href="">Login</a>
+                    <a href="/posts">Login</a>
                 </div>
                 <div className="selbtn"><button className="sellbtn">Sell</button></div>
             </div>
@@ -47,9 +38,7 @@ class Header extends React.Component{
     }
 }
 class Homeimg extends React.Component{
-    constructor(){
-        super()
-    }
+   
     render(){
         return(
             <div className="headersec flex">
