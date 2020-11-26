@@ -73,3 +73,35 @@ box-sizing: border-box;
     box-shadow: 1px 1px black;
 
 }
+
+.headcat{
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+.posts{
+    box-sizing: content-box;
+    border:1px solid black; 
+}
+.headcategory{
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top:10px;
+    font-size: 19px;
+    
+}
+ul li{
+    border-top:1px solid black; 
+    border-left:1px solid black; 
+    border-right:1px solid black; 
+    border-collapse: separate;
+    padding:10px;
+    width:30%;
+}
+.last{
+    border-bottom:1px solid black; 
+
+}
